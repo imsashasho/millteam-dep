@@ -16,20 +16,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="./static/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>contacts</title>
+    <title>millteam</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="./assets/styles/main.min.css">
     <script defer src="./assets/scripts/vendors.bundle.js"></script>
     <script defer src="./assets/scripts/index.bundle.js"></script>
-    <script defer src="./assets/scripts/contacts.bundle.js"></script>
-    <script type="text/javascript">
-        (function(d, s, u, e, p) {
-            p = d.getElementsByTagName(s)[0], e = d.createElement(s), e.async = 1, e.src = u, p.parentNode.insertBefore(e, p);
-        })(document, 'script', 'https://app.flatris.com.ua/public/web.js?cid=yNLpPx53k56X3Zb&hl=uk&hide_active_btn=1');
-    </script>
+    <script defer src="./assets/scripts/single-product.bundle.js"></script>
 </head>
 
-<body class="contacts" id="contacts">
+<body class="single-product" id="single-product">
     <!-- START SVG SPRITE--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
 
         <symbol id="icon-add" viewBox="0 0 14 14">
@@ -384,96 +379,597 @@
                                         <svg class="icon--home" role="presentation">
                                             <use xlink:href="#icon-home"></use>
                                         </svg></a></li>
-                                <li class="breadcrumbs-item"><a class="breadcrumbs-link text-12 text-basic-grey" href="/">Контакти</a></li>
+                                <li class="breadcrumbs-item"><a class="breadcrumbs-link text-12 text-basic-grey" href="/">Категорії</a></li>
+                                <li class="breadcrumbs-item"><a class="breadcrumbs-link text-12 text-basic-grey" href="/">Снаряди</a></li>
+                                <li class="breadcrumbs-item"><a class="breadcrumbs-link text-12 text-basic-grey" href="/">ОФ-462</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <section class="contacts-page">
-                    <div class="contacts-page-inner">
-                        <div class="contacts-page-intro">
-                            <div class="contacts-page-intro-form-wrap">
-                                <div class="contacts-page-intro-form-title-wrap">
-                                    <div class="contacts-page-intro-form-company text-16 text-deep-grey">MILLTEAM</div>
-                                    <div class="contacts-page-intro-form-title text-36 text-black">Як з нами зв’язатись?</div>
-                                    <div class="contacts-page-intro-form-subtitle text-16 text-deep-grey">Залишились запитання або хочеш зв’язатися з нами? Напиши нам, зателефонуй або надішли лист — будемо раді допомогти!</div>
+                <section class="single-product-hero">
+                    <div class="single-product-hero-inner">
+                        <div class="single-product-hero-swiper-wrap">
+                            <div class="swiper single-product-hero-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide single-product-hero-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                    <div class="swiper-slide single-product-hero-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                    <div class="swiper-slide single-product-hero-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                    <div class="swiper-slide single-product-hero-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                    <div class="swiper-slide single-product-hero-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                    <div class="swiper-slide single-product-hero-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
                                 </div>
-                                <form class="contacts-page-intro-form" action="/" autocomplete method="post">
-                                    <div class="contacts-page-intro-form-input-group">
-                                        <label class="contacts-page-intro-form-label" for="name"><span class="text-12 text-deep-grey">Ім'я</span>
-                                            <input class="contacts-page-intro-form-input" type="text" id="name" name="name" placeholder="Борис..." required>
-                                        </label>
-                                        <label class="contacts-page-intro-form-label" for="phone"><span class="text-12 text-deep-grey">Телефон</span>
-                                            <input class="contacts-page-intro-form-input" type="tel" id="phone" name="phone" placeholder="+380" required>
-                                        </label>
-                                        <label class="contacts-page-intro-form-label" for="email"><span class="text-12 text-deep-grey">Email</span>
-                                            <input class="contacts-page-intro-form-input" type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                                        </label>
-                                        <label class="contacts-page-intro-form-label contacts-page-intro-form-label--textarea" for="message">
-                                            <textarea class="contacts-page-intro-form-input" name="message" id="message" placeholder="Написати повідомлення..." required></textarea>
-                                        </label>
-                                    </div>
-                                    <button class="button button--primary--yellow button--l contact-homepage__btn" type="submit">
-                                        <svg class="icon--arrowBtn" role="presentation">
-                                            <use xlink:href="#icon-arrowBtn"></use>
-                                        </svg><span>Надіслати</span>
-                                    </button>
-                                </form>
                             </div>
-                            <div class="contacts-page-info">
-                                <div class="contacts-page-info-item">
-                                    <div class="contacts-page-info-item__title-wrap"><span class="contacts-page-info-item__title text-18-k text-black">За номером телефону</span><span class="contacts-page-info-item__descr text-16 text-deep-grey">Маєш питання чи хочеш з нами зв’язатися? Телефонуй — завжди на зв’язку та раді допомогти!</span></div><a class="contacts-page-info-item__link" href="tel:+380442000000">
-                                        <div class="contacts-page-info-item__icon">
-                                            <svg class="icon--phone" role="presentation">
-                                                <use xlink:href="#icon-phone"></use>
-                                            </svg>
-                                        </div><span class="text-16 text-black">+380 (44) 200 00 00</span>
-                                    </a>
+                            <div class="single-product-hero-swiper-thumbs-wrap">
+                                <div class="swiper-button-prev single-product-hero-swiper-thumbs-btn-prev">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
                                 </div>
-                                <div class="contacts-page-info-item">
-                                    <div class="contacts-page-info-item__title-wrap"><span class="contacts-page-info-item__title text-18-k text-black">Через електрону пошту</span><span class="contacts-page-info-item__descr text-16 text-deep-grey">Пишеш нам листа? Чудово — завжди читаємо пошту і відповідаємо якнайшвидше.</span></div><a class="contacts-page-info-item__link" href="mailTo:Example@gmail.com">
-                                        <div class="contacts-page-info-item__icon">
-                                            <svg class="icon--envelopeSimple" role="presentation">
-                                                <use xlink:href="#icon-envelopeSimple"></use>
-                                            </svg>
-                                        </div><span class="text-16 text-black">Example@gmail.com</span>
-                                    </a>
+                                <div class="swiper single-product-hero-swiper-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide single-product-hero-swiper-thumbs-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                        <div class="swiper-slide single-product-hero-swiper-thumbs-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                        <div class="swiper-slide single-product-hero-swiper-thumbs-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                        <div class="swiper-slide single-product-hero-swiper-thumbs-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                        <div class="swiper-slide single-product-hero-swiper-thumbs-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                        <div class="swiper-slide single-product-hero-swiper-thumbs-slide"><img src="./assets/images/single-product/1.png" alt="Макет осколково-фугасного снаряду ОФ-462"></div>
+                                    </div>
                                 </div>
-                                <div class="contacts-page-info-item">
-                                    <div class="contacts-page-info-item__title-wrap"><span class="contacts-page-info-item__title text-18-k text-black">Через соц.мережі</span><span class="contacts-page-info-item__descr text-16 text-deep-grey">Зручніше написати в соцмережах? Без проблем — відповідаємо скрізь!</span></div>
-                                    <div class="contacts-page-info-item__link-list"><a class="contacts-page-info-item__link" href="twitter.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--twitter" role="presentation">
-                                                    <use xlink:href="#icon-twitter"></use>
-                                                </svg>
-                                            </div>
-                                        </a><a class="contacts-page-info-item__link" href="facebook.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--facebook" role="presentation">
-                                                    <use xlink:href="#icon-facebook"></use>
-                                                </svg>
-                                            </div>
-                                        </a><a class="contacts-page-info-item__link" href="instagram.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--instagram" role="presentation">
-                                                    <use xlink:href="#icon-instagram"></use>
-                                                </svg>
-                                            </div>
-                                        </a><a class="contacts-page-info-item__link" href="youtube.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--youtube" role="presentation">
-                                                    <use xlink:href="#icon-youtube"></use>
-                                                </svg>
-                                            </div>
-                                        </a></div>
+                                <div class="swiper-button-next single-product-hero-swiper-thumbs-btn-next">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts-page-map">
-                            <iframe class="contacts-page-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.0581945010645!2d30.594665676239693!3d50.421387371586604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c57862a9f4bb%3A0x9f250a3ea0124e82!2sBerezniakivska%20St%2C%2029%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1749860374223!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="single-product-hero-info-wrap">
+                            <div class="single-product-hero-title-wrap">
+                                <h1 class="text-24-k text-black">Макет осколково-фугасного снаряду ОФ-462</h1>
+                                <div class="single-product-hero-rate-wrap">
+                                    <div class="single-product-hero-rate">
+                                        <div class="single-product-hero-rate-stars single-product-hero-rate-stars--4">
+                                            <svg class="icon--star" role="presentation">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="icon--star" role="presentation">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="icon--star" role="presentation">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="icon--star" role="presentation">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="icon--star" role="presentation">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div><span class="text-16 text-black">
+                                            ( 591 відгуків )</span>
+                                    </div>
+                                    <div class="single-product-hero-sku"> <span class="text-12 text-mid-grey">1234567890</span>
+                                        <svg class="icon--copy" role="presentation">
+                                            <use xlink:href="#icon-copy"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="single-product-hero-descr-wrap" data-more-container>
+                                    <p class="single-product-hero-descr text-16 text-deep-grey">
+                                        Макет осколково-фугасного снаряду ОФ-462 виготовлено в натуральну величину із високоякісного філамента. Наочність це надзвичайно важливий елемент в освітньому процесі, це один із принципів навчання, заснований на показі конкретних предметів, процесів, явищ. Завдяки макетам виготовленим в натуральну величину, є можливість на конкретному прикладі продемонструвати всі елементи зовнішньої будови макета вибухонебезпечного елементу, розповісти про принцип дії та правила поводження при виявленні такого предмета.
+                                        Макет відповідає типовому переліку навчальних матеріалів та розроблений для того, щоб полегшити сприйняття учнями нової інформації на заняттях із військово-патріотичного виховання, а вчитель матиме можливість використовувати сучасні методи та технології навчання для підвищення ефективності освітнього процесу.
+                                    </p><span class="single-product-hero-descr-more text-16 text-black text-m" data-more-btn>Дивитись більше</span>
+                                </div>
+                            </div><span class="single-product-hero-price text-32-f text-black">₴1.500</span>
+                            <div class="single-product-hero-btns-wrap">
+                                <button class="button button--primary--yellow button--l" type="button">
+                                    <svg class="icon--cart" role="presentation">
+                                        <use xlink:href="#icon-cart"></use>
+                                    </svg><span>Купити зараз</span>
+                                </button>
+                                <button class="button button--secondary--black button--l" type="button">
+                                    <svg class="icon--questionMark" role="presentation">
+                                        <use xlink:href="#icon-questionMark"></use>
+                                    </svg><span>Є питання</span>
+                                </button>
+                                <button class="single-product-hero-favourite active" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="single-product-hero-customer-info-list-wrap">
+                                <ul class="single-product-hero-customer-info-list">
+                                    <li class="single-product-hero-customer-info-item">
+                                        <svg class="icon--seen" role="presentation">
+                                            <use xlink:href="#icon-seen"></use>
+                                        </svg><span class="text-16 text-deep-grey"><span class="text-blue text-m"> 244 </span> Переглянули товар</span>
+                                    </li>
+                                    <li class="single-product-hero-customer-info-item"><span class="text-16 text-deep-grey">|</span></li>
+                                    <li class="single-product-hero-customer-info-item">
+                                        <svg class="icon--handShake" role="presentation">
+                                            <use xlink:href="#icon-handShake"></use>
+                                        </svg><span class="text-16 text-deep-grey"><span class="text-blue text-m"> 44 </span> Купили товар</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="single-product-hero-info-list">
+                                <li class="single-product-hero-info-item">
+                                    <svg class="icon--warranty" role="presentation">
+                                        <use xlink:href="#icon-warranty"></use>
+                                    </svg><span class="text-16 text-deep-grey">Гарантія</span><span class="text-16 text-mid-grey">Обмін / повернення товару впродовж 14 днів </span>
+                                </li>
+                                <li class="single-product-hero-info-item">
+                                    <svg class="icon--truck" role="presentation">
+                                        <use xlink:href="#icon-truck"></use>
+                                    </svg><span class="text-16 text-deep-grey">Доставка</span><span class="text-16 text-mid-grey">Безкоштвна доставка по Україні</span>
+                                </li>
+                                <li class="single-product-hero-info-item">
+                                    <svg class="icon--card" role="presentation">
+                                        <use xlink:href="#icon-card"></use>
+                                    </svg><span class="text-16 text-deep-grey">Оплата</span><span class="text-16 text-mid-grey">100% Безпечний платіж</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
+                <section class="single-product-details">
+                    <div class="single-product-details-list">
+                        <div class="single-product-details-item">
+                            <div class="single-product-details-item-title-wrap">
+                                <h3 class="single-product-details-item-title text-18-k text-black">Опис товару</h3>
+                                <div class="single-product-details-item-title-icon">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="single-product-details-item-line"></div>
+                            <div class="single-product-details-item-content">
+                                <p class="single-product-details-item-text text-14 text-deep-grey">
+                                    Макет осколково-фугасного снаряду ОФ-462 виготовлено в натуральну величину із високоякісного філамента. Наочність це надзвичайно важливий елемент в освітньому процесі, це один із принципів навчання, заснований на показі конкретних предметів, процесів, явищ. Завдяки макетам виготовленим в натуральну величину, є можливість на конкретному прикладі продемонструвати всі елементи зовнішньої будови макета вибухонебезпечного елементу, розповісти про принцип дії та правила поводження при виявленні такого предмета.
+                                    Макет відповідає типовому переліку навчальних матеріалів та розроблений для того, щоб полегшити сприйняття учнями нової інформації на заняттях із військово-патріотичного виховання, а вчитель матиме можливість використовувати сучасні методи та технології навчання для підвищення ефективності освітнього процесу.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-product-details-item">
+                            <div class="single-product-details-item-title-wrap">
+                                <h3 class="single-product-details-item-title text-18-k text-black">Характеристики</h3>
+                                <div class="single-product-details-item-title-icon">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="single-product-details-item-content">
+                                <ul class="single-product-details-item-list">
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Розмір:</span><span class="text-16 text-mid-grey">56 см х 13 см</span></li>
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Вага:</span><span class="text-16 text-mid-grey">850 г</span></li>
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Колір:</span><span class="text-16 text-mid-grey">5Сірий</span></li>
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Матеріал:</span><span class="text-16 text-mid-grey">Високоякісний філамент</span></li>
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Країна-виробник товару:</span><span class="text-16 text-mid-grey">Україна</span></li>
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Країна-вировник сировини:</span><span class="text-16 text-mid-grey">Україна</span></li>
+                                    <li class="single-product-details-item-list-item"><span class="text-14 text-mid-grey">Документація:</span><span class="text-16 text-mid-grey">Сертифікат відповідності</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single-product-details-item">
+                            <div class="single-product-details-item-title-wrap">
+                                <h3 class="single-product-details-item-title text-18-k text-black">відгуки</h3>
+                                <div class="single-product-details-item-title-icon">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="single-product-details-item-content">
+                                <div class="single-product-details-item-review-list">
+                                    <div class="single-product-details-item-review">
+                                        <div class="single-product-details-item-review-header">
+                                            <div class="single-product-details-item-review-header-rate-wrap"><span class="text-16 text-black">Олександр К.</span>
+                                                <div class="single-product-details-item-review-header-rate-stars single-product-details-item-review-header-rate-stars--5">
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div><span class="single-product-details-item-review-header-date text-14 text-mid-grey">12.09.2023</span>
+                                        </div>
+                                        <p class="single-product-details-item-review-text text-14 text-deep-grey">Це найкращий макет, який я коли-небудь бачив! Дуже детально зроблений, ідеально підходить для навчання.</p>
+                                        <div class="single-product-details-item-review-images"><img src="./assets/images/single-product/1.png" alt="Відгук про макет снаряду ОФ-462"><img src="./assets/images/single-product/1.png" alt="Відгук про макет снаряду ОФ-462"><img src="./assets/images/single-product/1.png" alt="Відгук про макет снаряду ОФ-462"></div>
+                                        <div class="single-product-details-item-review-comment">
+                                            <div class="single-product-details-item-review-comment-inner">
+                                                <svg class="icon--pros" role="presentation">
+                                                    <use xlink:href="#icon-pros"></use>
+                                                </svg><span class="text-14 text-black">Переваги:</span>
+                                            </div>
+                                            <p class="text-14 text-deep-grey">Це найкращий макет, який я коли-небудь бачив! Дуже детально зроблений, ідеально підходить для навчання.</p>
+                                        </div>
+                                        <div class="single-product-details-item-review-comment">
+                                            <div class="single-product-details-item-review-comment-inner">
+                                                <svg class="icon--cons" role="presentation">
+                                                    <use xlink:href="#icon-cons"></use>
+                                                </svg><span class="text-14 text-black">Недоліки:</span>
+                                            </div>
+                                            <p class="text-14 text-deep-grey">Немає недоліків, все чудово!</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-product-details-item-review">
+                                        <div class="single-product-details-item-review-header">
+                                            <div class="single-product-details-item-review-header-rate-wrap"><span class="text-16 text-black">Олександр К.</span>
+                                                <div class="single-product-details-item-review-header-rate-stars single-product-details-item-review-header-rate-stars--4">
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon--star" role="presentation">
+                                                        <use xlink:href="#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div><span class="single-product-details-item-review-header-date text-14 text-mid-grey">12.09.2023</span>
+                                        </div>
+                                        <p class="single-product-details-item-review-text text-14 text-deep-grey">Це найкращий макет, який я коли-небудь бачив! Дуже детально зроблений, ідеально підходить для навчання.</p>
+                                        <div class="single-product-details-item-review-comment">
+                                            <div class="single-product-details-item-review-comment-inner">
+                                                <svg class="icon--pros" role="presentation">
+                                                    <use xlink:href="#icon-pros"></use>
+                                                </svg><span class="text-14 text-black">Переваги:</span>
+                                            </div>
+                                            <p class="text-14 text-deep-grey">Це найкращий макет, який я коли-небудь бачив! Дуже детально зроблений, ідеально підходить для навчання.</p>
+                                        </div>
+                                        <div class="single-product-details-item-review-comment">
+                                            <div class="single-product-details-item-review-comment-inner">
+                                                <svg class="icon--cons" role="presentation">
+                                                    <use xlink:href="#icon-cons"></use>
+                                                </svg><span class="text-14 text-black">Недоліки:</span>
+                                            </div>
+                                            <p class="text-14 text-deep-grey">Немає недоліків, все чудово!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product-details-item">
+                            <div class="single-product-details-item-title-wrap">
+                                <h3 class="single-product-details-item-title text-18-k text-black">Часті питання</h3>
+                                <div class="single-product-details-item-title-icon">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="single-product-details-item-content">
+                                <div class="single-product-details-item-faq-list">
+                                    <div class="single-product-details-item-faq">
+                                        <div class="single-product-details-item-faq-header">
+                                            <div class="single-product-details-item-faq-header-title"> <span class="text-14-k text-basic-grey">1.</span><span class="text-14 text-basic-grey">Як довго триває доставка?</span></div>
+                                            <svg class="icon--swiperArrow" role="presentation">
+                                                <use xlink:href="#icon-swiperArrow"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="single-product-details-item-faq-text text-14 text-deep-grey">Доставка займає від 3 до 5 робочих днів.</p>
+                                    </div>
+                                    <div class="single-product-details-item-faq">
+                                        <div class="single-product-details-item-faq-header">
+                                            <div class="single-product-details-item-faq-header-title"> <span class="text-14-k text-basic-grey">2.</span><span class="text-14 text-basic-grey">Чи можу я повернути товар, якщо він мені не підійшов?</span></div>
+                                            <svg class="icon--swiperArrow" role="presentation">
+                                                <use xlink:href="#icon-swiperArrow"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="single-product-details-item-faq-text text-14 text-deep-grey">Так, ви можете повернути товар протягом 14 днів з моменту покупки.</p>
+                                    </div>
+                                    <div class="single-product-details-item-faq">
+                                        <div class="single-product-details-item-faq-header">
+                                            <div class="single-product-details-item-faq-header-title"> <span class="text-14-k text-basic-grey">3.</span><span class="text-14 text-basic-grey">Чи є гарантія на цей товар?</span></div>
+                                            <svg class="icon--swiperArrow" role="presentation">
+                                                <use xlink:href="#icon-swiperArrow"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="single-product-details-item-faq-text text-14 text-deep-grey">Так, на цей товар надається гарантія 6 місяців.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product-details-card">
+                        <div class="single-product-details-card-inner">
+                            <div class="single-product-details-card-title-wrap">
+                                <h3 class="single-product-details-card-title text-18-k text-black">Огляд товару</h3>
+                                <div class="single-product-details-card-title-favourite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="single-product-details-card-line"></div>
+                            <div class="single-product-details-card-img-wrap">
+                                <div class="single-product-details-card-img"><img src="./assets/images/single-product/1.png" alt="Макет снаряду ОФ-462"></div>
+                                <p class="single-product-details-card-text text-14 text-deep-grey">Макет осколково-фугасного снаряду ОФ-462</p>
+                            </div>
+                            <div class="single-product-details-card-line"></div>
+                            <div class="single-product-details-card-price-wrap"><span class="single-product-details-card-price text-18 text-black">Ціна</span><span class="single-product-details-card-price text-18 text-black">₴1.500</span></div>
+                            <div class="single-product-details-card-btns-wrap">
+                                <button class="button button--primary--yellow button--l" type="button">
+                                    <svg class="icon--cart" role="presentation">
+                                        <use xlink:href="#icon-cart"></use>
+                                    </svg><span>Купити зараз</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="category-views">
+                    <div class="category-views__title-wrap">
+                        <h2 class="category-views__title text-36 text-black">Вас може зацікавити</h2>
+                        <div class="category-views__btns-wrap">
+                            <div class="swiper-button-nav">
+                                <button class="swiper-button swiper-button--prev category-views-button-prev">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-button swiper-button--next category-views-button-next">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-views-list-wrap swiper">
+                        <div class="category-views-list swiper-wrapper"><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/1.png" alt="Макет протитранспортної фугасної міни ТМ-62П3 в розрізі" />
+                                    <button class="product-card__favourite active"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--2">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитранспортної фугасної міни ТМ-62П3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check active"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/2.png" alt="Макет протитанкової міни кумулятивної дії ПТМ-3 в розрізі" />
+                                    <button class="product-card__favourite"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--3">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитанкової міни кумулятивної дії ПТМ-3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴2000</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/3.png" alt="Макет сенсорної протитранспортної міни повного ураження ПТМ-3 в розрізі" />
+                                    <button class="product-card__favourite active"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--5">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет сенсорної протитранспортної міни повного ураження ПТМ-3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/4.png" alt="Макет протитанкової протиднищевої міни DM31" />
+                                    <button class="product-card__favourite"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--1">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитанкової протиднищевої міни DM31</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/1.png" alt="Макет протитранспортної фугасної міни ТМ-62П3 в розрізі" />
+                                    <button class="product-card__favourite"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--4">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитранспортної фугасної міни ТМ-62П3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-additional-text-wrap">
+                    <h4 class="text-18-k text-black">Опис сторінки</h4>
+                    <div class="category-additional-text" data-more-container>
+                        <p class="text-16 text-deep-grey">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p><span class="category-read-more text-16 text-black" data-more-btn>Читати далі</span>
+                    </div>
+                </div>
             </div>
         </div>
         <!--.page__footer-wrapper-->

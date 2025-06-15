@@ -16,20 +16,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="./static/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>contacts</title>
+    <title>millteam</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="./assets/styles/main.min.css">
     <script defer src="./assets/scripts/vendors.bundle.js"></script>
     <script defer src="./assets/scripts/index.bundle.js"></script>
-    <script defer src="./assets/scripts/contacts.bundle.js"></script>
-    <script type="text/javascript">
-        (function(d, s, u, e, p) {
-            p = d.getElementsByTagName(s)[0], e = d.createElement(s), e.async = 1, e.src = u, p.parentNode.insertBefore(e, p);
-        })(document, 'script', 'https://app.flatris.com.ua/public/web.js?cid=yNLpPx53k56X3Zb&hl=uk&hide_active_btn=1');
-    </script>
+    <script defer src="./assets/scripts/cart.bundle.js"></script>
 </head>
 
-<body class="contacts" id="contacts">
+<body class="cart-page" id="cart-page">
     <!-- START SVG SPRITE--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
 
         <symbol id="icon-add" viewBox="0 0 14 14">
@@ -384,96 +379,334 @@
                                         <svg class="icon--home" role="presentation">
                                             <use xlink:href="#icon-home"></use>
                                         </svg></a></li>
-                                <li class="breadcrumbs-item"><a class="breadcrumbs-link text-12 text-basic-grey" href="/">Контакти</a></li>
+                                <li class="breadcrumbs-item"><a class="breadcrumbs-link text-12 text-basic-grey" href="/">Корзина</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <section class="contacts-page">
-                    <div class="contacts-page-inner">
-                        <div class="contacts-page-intro">
-                            <div class="contacts-page-intro-form-wrap">
-                                <div class="contacts-page-intro-form-title-wrap">
-                                    <div class="contacts-page-intro-form-company text-16 text-deep-grey">MILLTEAM</div>
-                                    <div class="contacts-page-intro-form-title text-36 text-black">Як з нами зв’язатись?</div>
-                                    <div class="contacts-page-intro-form-subtitle text-16 text-deep-grey">Залишились запитання або хочеш зв’язатися з нами? Напиши нам, зателефонуй або надішли лист — будемо раді допомогти!</div>
-                                </div>
-                                <form class="contacts-page-intro-form" action="/" autocomplete method="post">
-                                    <div class="contacts-page-intro-form-input-group">
-                                        <label class="contacts-page-intro-form-label" for="name"><span class="text-12 text-deep-grey">Ім'я</span>
-                                            <input class="contacts-page-intro-form-input" type="text" id="name" name="name" placeholder="Борис..." required>
-                                        </label>
-                                        <label class="contacts-page-intro-form-label" for="phone"><span class="text-12 text-deep-grey">Телефон</span>
-                                            <input class="contacts-page-intro-form-input" type="tel" id="phone" name="phone" placeholder="+380" required>
-                                        </label>
-                                        <label class="contacts-page-intro-form-label" for="email"><span class="text-12 text-deep-grey">Email</span>
-                                            <input class="contacts-page-intro-form-input" type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                                        </label>
-                                        <label class="contacts-page-intro-form-label contacts-page-intro-form-label--textarea" for="message">
-                                            <textarea class="contacts-page-intro-form-input" name="message" id="message" placeholder="Написати повідомлення..." required></textarea>
-                                        </label>
-                                    </div>
-                                    <button class="button button--primary--yellow button--l contact-homepage__btn" type="submit">
-                                        <svg class="icon--arrowBtn" role="presentation">
-                                            <use xlink:href="#icon-arrowBtn"></use>
-                                        </svg><span>Надіслати</span>
-                                    </button>
-                                </form>
+                <section class="cart">
+                    <div class="cart-list-wrap">
+                        <div class="cart-list-title-wrap">
+                            <div class="cart-list-title">
+                                <h2 class="cart-list-title__text text-18-k text-black">Кошик</h2>
+                                <div class="cart-list-title__count text-14 text-deep-grey">(у вашому кошику <span class="text-blue"> 8 </span> товарів)</div>
                             </div>
-                            <div class="contacts-page-info">
-                                <div class="contacts-page-info-item">
-                                    <div class="contacts-page-info-item__title-wrap"><span class="contacts-page-info-item__title text-18-k text-black">За номером телефону</span><span class="contacts-page-info-item__descr text-16 text-deep-grey">Маєш питання чи хочеш з нами зв’язатися? Телефонуй — завжди на зв’язку та раді допомогти!</span></div><a class="contacts-page-info-item__link" href="tel:+380442000000">
-                                        <div class="contacts-page-info-item__icon">
-                                            <svg class="icon--phone" role="presentation">
-                                                <use xlink:href="#icon-phone"></use>
-                                            </svg>
-                                        </div><span class="text-16 text-black">+380 (44) 200 00 00</span>
-                                    </a>
+                            <button class="cart-list-btn-back" onclick="history.back()"> <span class="text-16 text-blue">Продовжити покупки</span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M9.96078 9.39828L4.33578 15.0233C4.23023 15.1288 4.08708 15.1881 3.93781 15.1881C3.78855 15.1881 3.64539 15.1288 3.53984 15.0233C3.4343 14.9177 3.375 14.7746 3.375 14.6253C3.375 14.476 3.4343 14.3329 3.53984 14.2273L8.76758 9.00031L3.53984 3.77328C3.4343 3.66773 3.375 3.52458 3.375 3.37531C3.375 3.22605 3.4343 3.08289 3.53984 2.97734C3.64539 2.8718 3.78855 2.8125 3.93781 2.8125C4.08708 2.8125 4.23023 2.8718 4.33578 2.97734L9.96078 8.60234C10.0131 8.65458 10.0546 8.71662 10.0829 8.78491C10.1112 8.8532 10.1258 8.92639 10.1258 9.00031C10.1258 9.07423 10.1112 9.14743 10.0829 9.21572C10.0546 9.284 10.0131 9.34604 9.96078 9.39828ZM15.5858 8.60234L9.96078 2.97734C9.85523 2.8718 9.71208 2.8125 9.56281 2.8125C9.41355 2.8125 9.27039 2.8718 9.16484 2.97734C9.0593 3.08289 9 3.22605 9 3.37531C9 3.52458 9.0593 3.66773 9.16484 3.77328L14.3926 9.00031L9.16484 14.2273C9.0593 14.3329 9 14.476 9 14.6253C9 14.7746 9.0593 14.9177 9.16484 15.0233C9.27039 15.1288 9.41355 15.1881 9.56281 15.1881C9.71208 15.1881 9.85523 15.1288 9.96078 15.0233L15.5858 9.39828C15.6381 9.34604 15.6796 9.284 15.7079 9.21572C15.7362 9.14743 15.7508 9.07423 15.7508 9.00031C15.7508 8.92639 15.7362 8.8532 15.7079 8.78491C15.6796 8.71662 15.6381 8.65458 15.5858 8.60234Z" fill="#00C1C4" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-list">
+                            <div class="cart-item">
+                                <div class="cart-item-title-wrap"><span class="text-14-k text-basic-grey">1.</span>
+                                    <div class="cart-item__img"><img src="./assets/images/products/1.png" alt="Картинка товару"></div>
+                                    <p class="cart-item-title text-16 text-black">Макет осколково-фугасного снаряду ОФ-477fh jhj </p>
                                 </div>
-                                <div class="contacts-page-info-item">
-                                    <div class="contacts-page-info-item__title-wrap"><span class="contacts-page-info-item__title text-18-k text-black">Через електрону пошту</span><span class="contacts-page-info-item__descr text-16 text-deep-grey">Пишеш нам листа? Чудово — завжди читаємо пошту і відповідаємо якнайшвидше.</span></div><a class="contacts-page-info-item__link" href="mailTo:Example@gmail.com">
-                                        <div class="contacts-page-info-item__icon">
-                                            <svg class="icon--envelopeSimple" role="presentation">
-                                                <use xlink:href="#icon-envelopeSimple"></use>
-                                            </svg>
-                                        </div><span class="text-16 text-black">Example@gmail.com</span>
-                                    </a>
+                                <div class="cart-item__count">
+                                    <button class="cart-item__count-btn cart-item__count-btn--minus">
+                                        <svg class="icon--remove" role="presentation">
+                                            <use xlink:href="#icon-remove"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="cart-item__count-input" type="number" value="1" min="1" id="1">
+                                    <button class="cart-item__count-btn cart-item__count-btn--plus">
+                                        <svg class="icon--add" role="presentation">
+                                            <use xlink:href="#icon-add"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="contacts-page-info-item">
-                                    <div class="contacts-page-info-item__title-wrap"><span class="contacts-page-info-item__title text-18-k text-black">Через соц.мережі</span><span class="contacts-page-info-item__descr text-16 text-deep-grey">Зручніше написати в соцмережах? Без проблем — відповідаємо скрізь!</span></div>
-                                    <div class="contacts-page-info-item__link-list"><a class="contacts-page-info-item__link" href="twitter.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--twitter" role="presentation">
-                                                    <use xlink:href="#icon-twitter"></use>
-                                                </svg>
-                                            </div>
-                                        </a><a class="contacts-page-info-item__link" href="facebook.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--facebook" role="presentation">
-                                                    <use xlink:href="#icon-facebook"></use>
-                                                </svg>
-                                            </div>
-                                        </a><a class="contacts-page-info-item__link" href="instagram.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--instagram" role="presentation">
-                                                    <use xlink:href="#icon-instagram"></use>
-                                                </svg>
-                                            </div>
-                                        </a><a class="contacts-page-info-item__link" href="youtube.com">
-                                            <div class="contacts-page-info-item__icon">
-                                                <svg class="icon--youtube" role="presentation">
-                                                    <use xlink:href="#icon-youtube"></use>
-                                                </svg>
-                                            </div>
-                                        </a></div>
+                                <div class="cart-item__price"><span class="text-18 text-black">₴1.400</span></div>
+                                <div class="cart-item__actions">
+                                    <button class="cart-item__actions__btn">
+                                        <svg class="icon--dots" role="presentation">
+                                            <use xlink:href="#icon-dots"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="cart-item-title-wrap"><span class="text-14-k text-basic-grey">2.</span>
+                                    <div class="cart-item__img"><img src="./assets/images/products/1.png" alt="Картинка товару"></div>
+                                    <p class="cart-item-title text-16 text-black">Макет осколково-фугасного снаряду ОФ-477fh jhj </p>
+                                </div>
+                                <div class="cart-item__count">
+                                    <button class="cart-item__count-btn cart-item__count-btn--minus">
+                                        <svg class="icon--remove" role="presentation">
+                                            <use xlink:href="#icon-remove"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="cart-item__count-input" type="number" value="1" min="1" id="2">
+                                    <button class="cart-item__count-btn cart-item__count-btn--plus">
+                                        <svg class="icon--add" role="presentation">
+                                            <use xlink:href="#icon-add"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart-item__price"><span class="text-18s text-black">₴1.400</span></div>
+                                <div class="cart-item__actions">
+                                    <button class="cart-item__actions__btn">
+                                        <svg class="icon--dots" role="presentation">
+                                            <use xlink:href="#icon-dots"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts-page-map">
-                            <iframe class="contacts-page-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.0581945010645!2d30.594665676239693!3d50.421387371586604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c57862a9f4bb%3A0x9f250a3ea0124e82!2sBerezniakivska%20St%2C%2029%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1749860374223!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="cart-summary__title-wrap"><span class="cart-summary__title text-18 text-black">Усього:</span><span class="text-24 text-black">₴1.400</span></div>
+                        <button class="button button--primary--yellow button--l cart-summary__btn" type="submit">
+                            <svg class="icon--shoppingBag" role="presentation">
+                                <use xlink:href="#icon-shoppingBag"></use>
+                            </svg><span>Купити зараз</span>
+                        </button>
+                        <div class="cart-summary-line"></div>
+                        <div class="cart-summary__info">
+                            <svg class="icon--info" role="presentation">
+                                <use xlink:href="#icon-info"></use>
+                            </svg><span class="text-16 text-deep-grey">Якщо ви замовите протягом 12 хвилин замовлення буде відправлено сьогодні.</span>
                         </div>
                     </div>
                 </section>
+                <div class="category-views">
+                    <div class="category-views__title-wrap">
+                        <h2 class="category-views__title text-36 text-black">Вас може зацікавити</h2>
+                        <div class="category-views__btns-wrap">
+                            <div class="swiper-button-nav">
+                                <button class="swiper-button swiper-button--prev category-views-button-prev">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-button swiper-button--next category-views-button-next">
+                                    <svg class="icon--swiperArrow" role="presentation">
+                                        <use xlink:href="#icon-swiperArrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-views-list-wrap swiper">
+                        <div class="category-views-list swiper-wrapper"><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/1.png" alt="Макет протитранспортної фугасної міни ТМ-62П3 в розрізі" />
+                                    <button class="product-card__favourite active"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--2">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитранспортної фугасної міни ТМ-62П3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check active"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/2.png" alt="Макет протитанкової міни кумулятивної дії ПТМ-3 в розрізі" />
+                                    <button class="product-card__favourite"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--3">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитанкової міни кумулятивної дії ПТМ-3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴2000</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/3.png" alt="Макет сенсорної протитранспортної міни повного ураження ПТМ-3 в розрізі" />
+                                    <button class="product-card__favourite active"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--5">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет сенсорної протитранспортної міни повного ураження ПТМ-3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/4.png" alt="Макет протитанкової протиднищевої міни DM31" />
+                                    <button class="product-card__favourite"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--1">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитанкової протиднищевої міни DM31</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a><a class="swiper-slide product-card" href="/single-product.html">
+                                <div class="product-card__img-wrap"><img src="./assets/images/products/1.png" alt="Макет протитранспортної фугасної міни ТМ-62П3 в розрізі" />
+                                    <button class="product-card__favourite"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M16.875 7.17188C16.875 12.0938 9.57726 16.0777 9.26648 16.2422C9.18457 16.2863 9.09301 16.3093 9 16.3093C8.90699 16.3093 8.81543 16.2863 8.73352 16.2422C8.42273 16.0777 1.125 12.0938 1.125 7.17188C1.1263 6.0161 1.58601 4.90803 2.40327 4.09077C3.22053 3.27351 4.3286 2.8138 5.48438 2.8125C6.93633 2.8125 8.20758 3.43687 9 4.49227C9.79242 3.43687 11.0637 2.8125 12.5156 2.8125C13.6714 2.8138 14.7795 3.27351 15.5967 4.09077C16.414 4.90803 16.8737 6.0161 16.875 7.17188Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__title-wrap">
+                                        <div class="product-card__rate-wrap">
+                                            <div class="product-card__rate product-card__rate--4">
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                                <svg class="icon--star" role="presentation">
+                                                    <use xlink:href="#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="product-card__sku"><span class="text-12 text-basic-grey">4448e7</span></div>
+                                        </div>
+                                        <h3 class="product-card__title text-16 text-black">Макет протитранспортної фугасної міни ТМ-62П3 в розрізі</h3>
+                                    </div>
+                                    <div class="product-card__btns-wrap"><span class="product-card__price text-24 text-black">₴1500</span>
+                                        <button class="product-card__btn">
+                                            <svg class="icon--cart" role="presentation">
+                                                <use xlink:href="#icon-cart"></use>
+                                            </svg>
+                                            <div class="product-card__btn-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M10.7655 3.64052L4.76552 9.64052C4.73069 9.67539 4.68934 9.70305 4.64381 9.72192C4.59829 9.74079 4.54949 9.7505 4.50021 9.7505C4.45093 9.7505 4.40213 9.74079 4.35661 9.72192C4.31108 9.70305 4.26972 9.67539 4.2349 9.64052L1.6099 7.01552C1.53953 6.94516 1.5 6.84972 1.5 6.75021C1.5 6.6507 1.53953 6.55526 1.6099 6.4849C1.68026 6.41453 1.7757 6.375 1.87521 6.375C1.97472 6.375 2.07016 6.41453 2.14052 6.4849L4.50021 8.84505L10.2349 3.1099C10.3053 3.03953 10.4007 3 10.5002 3C10.5997 3 10.6952 3.03953 10.7655 3.1099C10.8359 3.18026 10.8754 3.2757 10.8754 3.37521C10.8754 3.47472 10.8359 3.57016 10.7655 3.64052Z" fill="#00C1C4" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--.page__footer-wrapper-->
