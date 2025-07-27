@@ -15,7 +15,7 @@
   \*************************************************/
 /***/ (function() {
 
-eval("\n\n//# sourceURL=webpack://build/./src/assets/scripts/immediate-loading.js?");
+eval("{\n\n//# sourceURL=webpack://build/./src/assets/scripts/immediate-loading.js?\n}");
 
 /***/ })
 
